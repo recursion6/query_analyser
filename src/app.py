@@ -17,7 +17,7 @@ class App:
     def __init__(self):
         self.db: Database = Database(
             logger=MysqlLogger(),
-            analyser=MysqlAnalyzer(type=MysqlAnalyzer.PARTIAL_MATCH),
+            analyser=MysqlAnalyzer(),
         )
     
 
